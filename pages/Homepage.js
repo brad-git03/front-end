@@ -1,16 +1,17 @@
 import React from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import {View, Text, Button} from 'react-native';
 import styles from "../style";
 
 export default function Homepage({navigation}){
-    return (
+    return(
         <View style={styles.container}>
             <Text style={styles.title}>Welcome to my App</Text>
-            <View style={styles.buttonContainer}>
-                <Button
-                    title="Register"
-                    onPress={() =>navigation.navigate('Register')}/>
+            <View style={styles.containerButton} >
+                <Button title = "Register" 
+                onPress={() => navigation.navigate('Register')}/>
+                <Button title = "View All Users"
+                onPress={() => navigation.navigate('UserListPage')}/>
             </View>
         </View>
-    )
+    );
 }

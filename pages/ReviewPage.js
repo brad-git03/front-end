@@ -10,7 +10,7 @@ export default function ReviewPage({ route, navigation }) {
     // In a real app, this function would handle the final API submission
     const handleSubmit = async() => {
         try {
-            const response = await axios.post('http://192.168.30.111:8000/registration/api/register/', formData);
+            const response = await axios.post('http://127.0.0.1:8000/registration/api/register/', formData);
             console.log(response.data);
         } catch (error) {
             console.error(error);
